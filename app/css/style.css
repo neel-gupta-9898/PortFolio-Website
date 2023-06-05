@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+
+}
+
+.dark{
+
+}
+
+.header{
+    background-color: red;
+    display: flex;
+}
+
+.nav{
+    height: 70px;
+    display: flex;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar li{
+    padding: 0 12px;
+}
+
+.navbar li a{
+    font-size: 1.2rem;
+}
