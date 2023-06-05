@@ -5,10 +5,12 @@
     list-style: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: cursive;
 }
 
 :root{
-
+    --primary-color:#fff;
+    --secondary-color:#0000;
 }
 
 .dark{
@@ -16,13 +18,19 @@
 }
 
 .header{
-    background-color: red;
-    display: flex;
+    background-color: aqua;
+    padding: 0 30px;
 }
 
 .nav{
     height: 70px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-head a{
+    font-size: 1.5rem;
 }
 
 .navbar{
@@ -36,4 +44,5 @@
 
 .navbar li a{
     font-size: 1.2rem;
+    color: black;
 }
