@@ -20,8 +20,11 @@
   --white-color: #fdfdfd;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .dark {
-  
 }
 
 .header {
@@ -29,6 +32,20 @@
   padding: 0 50px;
   z-index: 999;
   position: relative;
+  
+}
+
+.header.sticky {
+  box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fdfdfd;
+  transition: 0.5s ease-out;
+}
+
+.header.sticky .navbar li a {
+  color: var(--text-color);
 }
 
 .nav {
@@ -50,7 +67,7 @@
 
 .navbar li {
   padding: 0 12px;
-  transition: 0.5s ease-out;
+  transition: 0.2s ease-out;
 }
 
 .navbar li:hover {
@@ -73,10 +90,11 @@
 }
 
 .hero {
-  height: 90vh;
+  height: 95vh;
   padding: 10px 0 10px 80px;
   display: flex;
   align-items: center;
+  margin-bottom: 10rem;
 }
 
 .left-hero {
@@ -99,9 +117,8 @@
   color: var(--text-color);
 }
 
-.left-hero .hero-txt{
+.left-hero .hero-txt {
   color: var(--text-color);
-
 }
 
 .social-media {
@@ -109,8 +126,9 @@
 }
 
 .social-media a {
-  border: 2px solid var(--main-color);
-  border-radius: 5px;
+  border: 2.5px solid var(--main-color);
+  border-radius: 50px;
+  box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
   padding: 6px 10px;
   color: var(--text-color);
 }
@@ -119,29 +137,29 @@
   transform: translateY(-3px);
 }
 
-.download-cv{
+.btn {
   padding: 10px;
   background-color: var(--main-color);
   border: none;
   border-radius: 4px;
   color: var(--white-color);
   font-size: 1.01rem;
-  box-shadow: 0 .2rem .5rem var(--shadow-color);
+  box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
 }
 
-.home-extra{
+.home-extra {
   margin-top: 10px;
 }
 
-.right-hero{
+.right-hero {
   /* background-color: #262829; */
-  width: 69%;
-  height: 100%;
+  width: 75%;
+  height: 100vh;
 }
 
-.overlay{
+.overlay {
   position: relative;
-  top: -80px;
+  top: -120px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -149,4 +167,35 @@
   border-bottom: 384px solid var(--main-color);
   border-top: 384px solid var(--main-color);
   border-right: 384px solid var(--main-color);
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.about h3 {
+  color: var(--text-color);
+}
+
+.about-heading {
+  color: var(--main-color);
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.about-main {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: var(--text-color);
+}
+
+.about-txt {
+  line-height: 1.4rem;
+  color: var(--text-color);
+  margin-bottom: 12px;
+  margin-top: 3px;
 }
