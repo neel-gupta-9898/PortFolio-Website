@@ -27,12 +27,15 @@ html {
 .dark {
 }
 
+.main-txt{
+  color: var(--main-color);
+}
+
 .header {
   background-color: transparent;
   padding: 0 50px;
   z-index: 999;
   position: relative;
-  
 }
 
 .header.sticky {
@@ -173,7 +176,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 4rem;
 }
 
 .about h3 {
@@ -198,4 +201,29 @@ html {
   color: var(--text-color);
   margin-bottom: 12px;
   margin-top: 3px;
+}
+
+.services{
+  padding: 0 5rem;
+}
+
+#myservices{
+  font-size: 2rem;
+  color: var(--text-color);
+  margin: 3rem;
+}
+
+.service{
+  border: 0.1rem solid var(--shadow-color);
+  border-radius: 5px;
+  box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
+  width: 22rem;
+  margin: 20px;
+  /* margin: auto; */
+  padding: 1rem;
+}
+
+.service-head{
+  font-size: 2rem;
+  line-height: 4rem;
 }
